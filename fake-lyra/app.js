@@ -1,70 +1,96 @@
-let createError = require('http-errors');
-let express = require('express');
-let session = require('express-session');
-let path = require('path');
-let cookieParser = require('cookie-parser');
-let logger = require('morgan');
+var express = require('express');
+var session = require('express-session')
+var engine = require('ejs-locals');
+var path = require('path');
+var favicon = require('serve-favicon');
+var fs = require("fs");
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var log4js = require("log4js");
 
-// Database
-let mongo = require('mongodb');
-let monk = require('monk');
-let db = monk('localhost:27017/nodetest2');
+var init_db = require('./model/init_db');
+var login = require('./routes/login');
+var products = require('./routes/products');
 
+var app = express();
 
-let adminRouter = require('./routes/admin');
-let usersRouter = require('./routes/users');
-let loginRouter = require('./routes/index');
-let pikachuRouter = require('./routes/pikachu');
-let orderRouter = require('./routes/order');
-// support php file exec
-let phpRouter = require('./routes/php');
+// config second logger
+log4js.loadAppender('file');
+//log4js.addAppender(log4js.appenders.console());
+log4js.addAppender(log4js.appenders.file('app-custom.log'), 'vnode');
 
-let app = express();
+var logger4js = log4js.getLogger('vnode');
+logger4js.setLevel('INFO');
 
-// view engine setup
+var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'))
+
+/*
+ * Template engine
+ */
+app.engine('ejs', engine);
+
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 
-app.use(session({
-  secret: "Shh, its a secret!",
-  resave: true,
-  saveUninitialized: true,
-  expires: new Date(Date.now() + (30 * 86400 * 1000)),
-}));
-
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// uncomment after placing your favicon in /public
+app.use(logger('combined', {stream: accessLogStream}));
+app.use(bodyParser());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+  secret: 'ñasddfilhpaf78h78032h780g780fg780asg780dsbovncubuyvqy',
+  cookie: {
+    secure: false,
+    maxAge: 99999999999
+  }
+}));
 
-// Make our db accessible to our router
-app.use(function(req,res,next){
-    req.db = db;
-    next();
-});
+/*
+ * Routes config
+ */
+app.use('', products);
+app.use('', login);
 
-app.use('/', adminRouter);
-app.use('/users', usersRouter);
-app.use('/', loginRouter);
-app.use('/', pikachuRouter);
-app.use('/', orderRouter);
-app.use('/', phpRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
 });
 
-// error handler
+/*
+ * Debug functions and error handlers
+ */
+if (app.get('env') === 'development') {
+  app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+      message: err.message,
+      error: err
+    });
+  });
+}
+
+// production error handler
+// no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error', {
+    message: err.message,
+    error: {}
+  });
 });
+
+/*
+ * Create database
+ */
+logger4js.info("Building database")
+// logger.info(("Building database");
+
+init_db();
 
 module.exports = app;
