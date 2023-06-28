@@ -1,0 +1,540 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - gulp > glob-watcher > chokidar > braces > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: gulp > glob-watcher > chokidar > braces > snapdragon > debug
+    - gulp > glob-watcher > anymatch > micromatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: gulp > glob-watcher > anymatch > micromatch > snapdragon > debug
+    - gulp > gulp-cli > matchdep > micromatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: gulp > gulp-cli > matchdep > micromatch > snapdragon > debug
+    - gulp > glob-watcher > anymatch > micromatch > braces > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > anymatch > micromatch > braces > snapdragon >
+          debug
+    - gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > debug
+    - gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon >
+          debug
+    - gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > debug
+    - gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon >
+          debug
+    - gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon >
+          debug
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon >
+          debug
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon >
+          debug
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon >
+          debug
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon >
+          debug
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > braces > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > chokidar > anymatch > micromatch > braces >
+          snapdragon > debug
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > braces > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > chokidar > readdirp > micromatch > braces >
+          snapdragon > debug
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > braces > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > liftoff > findup-sync > micromatch > braces >
+          snapdragon > debug
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > braces > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > matchdep > findup-sync > micromatch > braces >
+          snapdragon > debug
+    - gulp > glob-watcher > anymatch > micromatch > extglob > expand-brackets > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > anymatch > micromatch > extglob >
+          expand-brackets > snapdragon > debug
+    - gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets >
+          snapdragon > debug
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > chokidar > anymatch > micromatch > extglob >
+          snapdragon > debug
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > chokidar > readdirp > micromatch > extglob >
+          snapdragon > debug
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob >
+          snapdragon > debug
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob >
+          snapdragon > debug
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch >
+          snapdragon > debug
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch >
+          snapdragon > debug
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch >
+          snapdragon > debug
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch >
+          snapdragon > debug
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > chokidar > anymatch > micromatch > extglob >
+          expand-brackets > snapdragon > debug
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > glob-watcher > chokidar > readdirp > micromatch > extglob >
+          expand-brackets > snapdragon > debug
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob >
+          expand-brackets > snapdragon > debug
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > debug:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob >
+          expand-brackets > snapdragon > debug
+  'npm:ms:20170412':
+    - '@babel/core > debug > ms':
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: '@babel/core > debug > ms'
+    - sequelize > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: sequelize > debug > ms
+    - simple-git > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: simple-git > debug > ms
+    - '@babel/core > @babel/traverse > debug > ms':
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: '@babel/core > @babel/traverse > debug > ms'
+    - '@sentry/node > https-proxy-agent > debug > ms':
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: '@sentry/node > https-proxy-agent > debug > ms'
+    - '@babel/plugin-proposal-function-sent > @babel/helper-wrap-function > @babel/traverse > debug > ms':
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          @babel/plugin-proposal-function-sent > @babel/helper-wrap-function >
+          @babel/traverse > debug > ms
+    - '@babel/preset-env > babel-plugin-polyfill-corejs2 > @babel/helper-define-polyfill-provider > debug > ms':
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          @babel/preset-env > babel-plugin-polyfill-corejs2 >
+          @babel/helper-define-polyfill-provider > debug > ms
+    - '@babel/preset-env > babel-plugin-polyfill-corejs3 > @babel/helper-define-polyfill-provider > debug > ms':
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          @babel/preset-env > babel-plugin-polyfill-corejs3 >
+          @babel/helper-define-polyfill-provider > debug > ms
+    - '@babel/preset-env > babel-plugin-polyfill-regenerator > @babel/helper-define-polyfill-provider > debug > ms':
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          @babel/preset-env > babel-plugin-polyfill-regenerator >
+          @babel/helper-define-polyfill-provider > debug > ms
+    - '@sentry/node > https-proxy-agent > agent-base > debug > ms':
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: '@sentry/node > https-proxy-agent > agent-base > debug > ms'
+    - google-auth-library > gaxios > https-proxy-agent > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: google-auth-library > gaxios > https-proxy-agent > debug > ms
+    - '@babel/preset-env > @babel/plugin-transform-object-super > @babel/helper-replace-supers > @babel/traverse > debug > ms':
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          @babel/preset-env > @babel/plugin-transform-object-super >
+          @babel/helper-replace-supers > @babel/traverse > debug > ms
+    - google-auth-library > gaxios > https-proxy-agent > agent-base > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          google-auth-library > gaxios > https-proxy-agent > agent-base > debug
+          > ms
+    - google-auth-library > gcp-metadata > gaxios > https-proxy-agent > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          google-auth-library > gcp-metadata > gaxios > https-proxy-agent >
+          debug > ms
+    - google-auth-library > gtoken > gaxios > https-proxy-agent > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: google-auth-library > gtoken > gaxios > https-proxy-agent > debug > ms
+    - googleapis > google-auth-library > gaxios > https-proxy-agent > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > google-auth-library > gaxios > https-proxy-agent > debug
+          > ms
+    - googleapis > googleapis-common > gaxios > https-proxy-agent > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > googleapis-common > gaxios > https-proxy-agent > debug >
+          ms
+    - '@babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > debug > ms':
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          @babel/preset-env > @babel/plugin-transform-async-to-generator >
+          @babel/helper-remap-async-to-generator > @babel/helper-wrap-function >
+          @babel/traverse > debug > ms
+    - google-auth-library > gcp-metadata > gaxios > https-proxy-agent > agent-base > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          google-auth-library > gcp-metadata > gaxios > https-proxy-agent >
+          agent-base > debug > ms
+    - google-auth-library > gtoken > gaxios > https-proxy-agent > agent-base > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          google-auth-library > gtoken > gaxios > https-proxy-agent > agent-base
+          > debug > ms
+    - googleapis > google-auth-library > gaxios > https-proxy-agent > agent-base > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > google-auth-library > gaxios > https-proxy-agent >
+          agent-base > debug > ms
+    - googleapis > googleapis-common > gaxios > https-proxy-agent > agent-base > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > googleapis-common > gaxios > https-proxy-agent >
+          agent-base > debug > ms
+    - googleapis > google-auth-library > gcp-metadata > gaxios > https-proxy-agent > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > google-auth-library > gcp-metadata > gaxios >
+          https-proxy-agent > debug > ms
+    - googleapis > google-auth-library > gtoken > gaxios > https-proxy-agent > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > google-auth-library > gtoken > gaxios > https-proxy-agent
+          > debug > ms
+    - googleapis > googleapis-common > google-auth-library > gaxios > https-proxy-agent > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > googleapis-common > google-auth-library > gaxios >
+          https-proxy-agent > debug > ms
+    - gulp > glob-watcher > chokidar > braces > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: gulp > glob-watcher > chokidar > braces > snapdragon > debug > ms
+    - gulp > glob-watcher > anymatch > micromatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: gulp > glob-watcher > anymatch > micromatch > snapdragon > debug > ms
+    - gulp > gulp-cli > matchdep > micromatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: gulp > gulp-cli > matchdep > micromatch > snapdragon > debug > ms
+    - googleapis > google-auth-library > gcp-metadata > gaxios > https-proxy-agent > agent-base > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > google-auth-library > gcp-metadata > gaxios >
+          https-proxy-agent > agent-base > debug > ms
+    - googleapis > google-auth-library > gtoken > gaxios > https-proxy-agent > agent-base > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > google-auth-library > gtoken > gaxios > https-proxy-agent
+          > agent-base > debug > ms
+    - googleapis > googleapis-common > google-auth-library > gaxios > https-proxy-agent > agent-base > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > googleapis-common > google-auth-library > gaxios >
+          https-proxy-agent > agent-base > debug > ms
+    - googleapis > googleapis-common > google-auth-library > gcp-metadata > gaxios > https-proxy-agent > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > googleapis-common > google-auth-library > gcp-metadata >
+          gaxios > https-proxy-agent > debug > ms
+    - googleapis > googleapis-common > google-auth-library > gtoken > gaxios > https-proxy-agent > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > googleapis-common > google-auth-library > gtoken > gaxios
+          > https-proxy-agent > debug > ms
+    - gulp > glob-watcher > anymatch > micromatch > braces > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > anymatch > micromatch > braces > snapdragon >
+          debug > ms
+    - gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > debug
+          > ms
+    - gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon >
+          debug > ms
+    - gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > debug
+          > ms
+    - gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon >
+          debug > ms
+    - gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon >
+          debug > ms
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon >
+          debug > ms
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon >
+          debug > ms
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon >
+          debug > ms
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon >
+          debug > ms
+    - googleapis > googleapis-common > google-auth-library > gcp-metadata > gaxios > https-proxy-agent > agent-base > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > googleapis-common > google-auth-library > gcp-metadata >
+          gaxios > https-proxy-agent > agent-base > debug > ms
+    - googleapis > googleapis-common > google-auth-library > gtoken > gaxios > https-proxy-agent > agent-base > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          googleapis > googleapis-common > google-auth-library > gtoken > gaxios
+          > https-proxy-agent > agent-base > debug > ms
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > braces > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > chokidar > anymatch > micromatch > braces >
+          snapdragon > debug > ms
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > braces > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > chokidar > readdirp > micromatch > braces >
+          snapdragon > debug > ms
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > braces > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > liftoff > findup-sync > micromatch > braces >
+          snapdragon > debug > ms
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > braces > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > matchdep > findup-sync > micromatch > braces >
+          snapdragon > debug > ms
+    - gulp > glob-watcher > anymatch > micromatch > extglob > expand-brackets > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > anymatch > micromatch > extglob >
+          expand-brackets > snapdragon > debug > ms
+    - gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets >
+          snapdragon > debug > ms
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > chokidar > anymatch > micromatch > extglob >
+          snapdragon > debug > ms
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > chokidar > readdirp > micromatch > extglob >
+          snapdragon > debug > ms
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob >
+          snapdragon > debug > ms
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob >
+          snapdragon > debug > ms
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch >
+          snapdragon > debug > ms
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch >
+          snapdragon > debug > ms
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch >
+          snapdragon > debug > ms
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch >
+          snapdragon > debug > ms
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > chokidar > anymatch > micromatch > extglob >
+          expand-brackets > snapdragon > debug > ms
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > glob-watcher > chokidar > readdirp > micromatch > extglob >
+          expand-brackets > snapdragon > debug > ms
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob >
+          expand-brackets > snapdragon > debug > ms
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > debug > ms:
+        patched: '2023-06-28T04:28:05.370Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob >
+          expand-brackets > snapdragon > debug > ms
