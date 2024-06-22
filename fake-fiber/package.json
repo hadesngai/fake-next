@@ -82,7 +82,7 @@
     "node-svn-ultimate": "^1.0.4",
     "nodemailer": "^6.6.2",
     "p-queue": "^6.6.2",
-    "pug": "^2.0.0-beta6",
+    "pug": "^3.0.0",
     "ramda": "^0.26.1",
     "read-chunk": "^2.0.0",
     "redis": "~2.6.2",
